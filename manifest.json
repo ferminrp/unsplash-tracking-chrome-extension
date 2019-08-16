@@ -1,24 +1,23 @@
 {
   "manifest_version": 2,
 
-  "name": "Simple Analytics Extension",
-  "description": "Track your simple analytics dashboards.",
+  "name": "Unsplash Download Tracker",
+  "description": "Track your Unsplash Downloads.",
   "version": "0.0.0.1",
 
   "icons": {
-    "48": "SimpleAnalytic.png"
+    "48": "icon.png"
   },
-  "content_security_policy": "script-src 'self' https://simpleanalytics.com 'unsafe-eval'; object-src 'self'",
+
   "permissions": [
-    "activeTab",
-    "https://*/"
+    "activeTab"
   ],
   "background": {
     "scripts": ["background.js"],
     "persistent": false
   },
   "browser_action": {
-    "default_icon": "SimpleAnalytic.png",
+    "default_icon": "icon.png",
     "default_popup": "popup.html"
   }
 }
